@@ -1,0 +1,25 @@
+:root {
+  --brown: #2d1ef1;
+  --yellow: #ff9e01;
+  --gray: #ece8dc;
+  --white: #fff;
+  --dark: #222;
+}
+
+body {
+  color: var(--dark);
+}
+
+.text-yellow {
+  color: var(--yellow);
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.cart-icon {
+  cursor: pointer;
+  color: var(--yellow);
+  font-size: 2rem;
+}
