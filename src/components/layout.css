@@ -49,3 +49,7 @@ body {
   background: var(--yellow);
   color: white;
 }
+
+.footer {
+  background: rgb(26, 69, 150);
+}

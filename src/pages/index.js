@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import BackImage from "../components/backSection"
 import SEO from "../components/seo"
 import Info from "../components/info"
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
