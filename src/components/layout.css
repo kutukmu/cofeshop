@@ -2,7 +2,7 @@
 
 :root {
   --brown: #2d1ef1;
-  --yellow: #ff9e01;
+  --yellow: rgb(255, 158, 1);
   --gray: #ece8dc;
   --white: #fff;
   --dark: #222;
@@ -25,4 +25,27 @@ body {
   cursor: pointer;
   color: var(--yellow);
   font-size: 2rem;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
+  background: linear-gradient(
+    rgba(255, 174, 0, 0.253),
+    rgba(255, 30, 0, 0.308)
+  );
+  background-size: cover;
+}
+
+.btn-yellow {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.btn-yellow:hover {
+  background: var(--yellow);
+  color: white;
 }

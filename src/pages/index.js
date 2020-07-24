@@ -1,16 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-
+import BackImage from "../components/backSection"
 import SEO from "../components/seo"
-
-const IndexPage = () => (
+import Info from "../components/info"
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <BackImage
+      imgdata={data}
+      title="Take A Little Break"
+      classname="default-background"
+    />
+
+    <Info />
   </Layout>
 )
 
 export default IndexPage
+export const query = graphql`
+  {
+    file(relativePath: { eq: "back3.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
