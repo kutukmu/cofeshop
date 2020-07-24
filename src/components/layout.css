@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
 :root {
   --brown: #2d1ef1;
   --yellow: #ff9e01;
@@ -8,6 +10,7 @@
 
 body {
   color: var(--dark);
+  font-family: "Poppins", sans-serif !important;
 }
 
 .text-yellow {
