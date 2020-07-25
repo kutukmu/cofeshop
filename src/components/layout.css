@@ -64,4 +64,6 @@ body {
     rgba(129, 129, 129, 0.253),
     rgba(126, 126, 126, 0.308)
   );
+  background-size: cover;
+  background-position: center;
 }
