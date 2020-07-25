@@ -7,7 +7,11 @@ const about = ({ data }) => {
   return (
     <div>
       <Layout>
-        <BackImage imgdata={data} title="Our Story" />
+        <BackImage
+          imgdata={data}
+          title="Our Story"
+          classname="about-background"
+        />
         <Info />
       </Layout>
     </div>
