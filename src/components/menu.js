@@ -21,8 +21,13 @@ export class Menu extends Component {
     }
   }
 
-  handleItems = () => {
-    console.log("button")
+  handleClick = category => {
+    this.setState({
+      coffeeItems:
+        category !== "All"
+          ? this.state.items.filter(n => n.category === category)
+          : this.state.items,
+    })
   }
   render() {
     console.log(this.state.categories)
@@ -38,6 +43,9 @@ export class Menu extends Component {
                     <button
                       key={idx}
                       className="btn btn-yellow text-capitalize mr-2 mt-2"
+                      onClick={() => {
+                        this.handleClick(n)
+                      }}
                     >
                       {n}
                     </button>
