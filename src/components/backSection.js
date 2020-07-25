@@ -4,9 +4,8 @@ import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 const BackgroundSection = ({ imgdata, classname, title, children }) => {
-  const imageData = imgdata.file.childImageSharp.fluid
   return (
-    <BackgroundImage Tag="section" fluid={imageData} className={classname}>
+    <BackgroundImage Tag="section" fluid={imgdata} className={classname}>
       <h1 className="title text-white text-center text-uppercase display-4 font-weight-bold">
         {title}
       </h1>
