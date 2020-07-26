@@ -5,6 +5,8 @@ import BackImage from "../components/backSection"
 import SEO from "../components/seo"
 import Info from "../components/info"
 import Menu from "../components/menu"
+import Products from "../components/products"
+import Contact from "../components/contact"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
@@ -16,6 +18,8 @@ const IndexPage = ({ data }) => (
 
     <Info />
     <Menu items={data.allContentfulCoffeeitem} />
+    <Products items={data.allContentfulCoffeeProduct} />
+    <Contact />
   </Layout>
 )
 
@@ -43,6 +47,20 @@ export const query = graphql`
         description {
           description
         }
+      }
+    }
+
+    allContentfulCoffeeProduct {
+      nodes {
+        price
+        title
+        image {
+          fluid {
+            src
+            ...GatsbyContentfulFluid
+          }
+        }
+        id
       }
     }
   }

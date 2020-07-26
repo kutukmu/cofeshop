@@ -68,6 +68,7 @@ body {
   background-position: center;
 }
 
-.menu {
+.menu,
+.contact {
   background: var(--gray);
 }
